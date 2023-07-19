@@ -30,7 +30,6 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-
 # UPDATE THIS
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'bangazonissuesserver',
+    'bangazonissuesserverapi',
 ]
 
 # THIS IS NEW
