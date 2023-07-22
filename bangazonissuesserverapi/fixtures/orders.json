@@ -1,0 +1,30 @@
+[
+  {
+      "model": "bangazonissuesserverapi.category",
+      "pk": 1,
+      "fields": {
+					"customer_id": 1,
+          "first_name": "Van",
+					"last_name": "Hoang",
+					"address": "208 Whitney St Nashville TN 37210",
+					"payment_type": "Credit Card",
+					"is_open": true,
+					"created_on": "1970-01-01T00:00:01Z",
+					"order_total": 100.00
+        }
+  },
+  {
+      "model": "bangazonissuesserverapi.category",
+      "pk": 2,
+      "fields": {
+				"customer_id": 1,
+				"first_name": "Van",
+				"last_name": "Hoang",
+				"address": "208 Whitney St Nashville TN 37210",
+				"payment_type": "Credit Card",
+				"is_open": true,
+				"created_on": "1970-01-01T00:00:01Z",
+				"order_total": 25.00
+      }
+}
+]

@@ -21,7 +21,7 @@ class OrderView(ViewSet):
             return Response(serializer.data)
         except Order.DoesNotExist:
           	return Response({'message': 'order does not exist'}, status=status.HTTP_404_NOT_FOUND)
-
+       
     def list(self, request):
         """Handle GET requests to get all orders
 
@@ -34,11 +34,11 @@ class OrderView(ViewSet):
     
     def create(self, request):
        
-        CustomerId = User.objects.get(uid=request.data["seller_id"])
+        CustomerId = User.objects.get(pk=request.data["customer_id"])
 
         order = Order.objects.create(
-						customer_id = CustomerId,
-						first_name=request.data["first_name"],
+            customer_id = CustomerId,
+            first_name=request.data["first_name"],
             last_name=request.data["last_name"],
             address=request.data["address"],
             payment_type=request.data["payment_type"],
@@ -52,8 +52,8 @@ class OrderView(ViewSet):
     def update(self, request, pk):
 
         order = Order.objects.get(pk=pk)
-        order.customer_id = User.objects.get(uid=request.data["customer_id"])
-        order.first_name= Category.objects.get(pk=request.data["first_name"])
+        order.customer_id = User.objects.get(pk=request.data["customer_id"])
+        order.first_name= request.data["first_name"]
         order.last_name = request.data["last_name"]
         order.address = request.data["address"]
         order.payment_type = request.data["payment_type"]
@@ -76,5 +76,5 @@ class OrderSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Order
-        fields = ('customer_id', 'first_name', 'last_name', 'address', 'payment_type', 'is_open', 'created_on','order_total')
+        fields = ('id', 'customer_id', 'first_name', 'last_name', 'address', 'payment_type', 'is_open', 'created_on','order_total')
         depth = 1

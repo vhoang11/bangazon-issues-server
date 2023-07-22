@@ -35,12 +35,12 @@ class ProductView(ViewSet):
     
     def create(self, request):
        
-        SellerId = User.objects.get(uid=request.data["seller_id"])
-        CatId = Category.objects.get(pk=request.data["category_id"])
+        sellerId = User.objects.get(pk=request.data["seller_id"])
+        catId = Category.objects.get(pk=request.data["category_id"])
 
         product = Product.objects.create(
-						seller_id = SellerId,
-						category_id=CatId,
+            seller_id = sellerId,
+            category_id=catId,
             title=request.data["title"],
             created_on=request.data["created_on"],
             image_url=request.data["image_url"],
@@ -48,12 +48,12 @@ class ProductView(ViewSet):
             price=request.data["price"],
         )
         serializer = ProductSerializer(product)
-        return Response(serializer.data)  
-    
+        return Response(serializer.data)
+
     def update(self, request, pk):
 
         product = Product.objects.get(pk=pk)
-        product.seller_id = User.objects.get(uid=request.data["seller_id"])
+        product.seller_id = User.objects.get(pk=request.data["seller_id"])
         product.category_id= Category.objects.get(pk=request.data["category_id"])
         product.title = request.data["title"]
         product.created_on = request.data["created_on"]
