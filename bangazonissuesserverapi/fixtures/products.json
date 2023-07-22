@@ -1,0 +1,52 @@
+[
+  {
+      "model": "bangazonissuesserverapi.category",
+      "pk": 1,
+      "fields": {
+					"seller_id": 1,
+          "category_id": 1,
+					"title": "The Bennet Buttondown Shirt by Maeve: Striped Edition",
+					"created_on": "1970-01-01T00:00:01Z",
+					"image_url": "https://images.urbndata.com/is/image/Anthropologie/4110916210171_069_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+					"description": "Tailored yet soft, Bennet is the star of the shirting world—it's perfect as the main feature, in a supporting role beneath your favorite jacket, or unbuttoned over a tank top.",
+					"price": 10.00
+        }
+  },
+  {
+      "model": "bangazonissuesserverapi.category",
+      "pk": 2,
+      "fields": {
+					"seller_id": 1,
+					"category_id": 2,
+					"title": "The Colette Cropped Wide-Leg Pants by Maeve",
+					"created_on": "1970-01-01T00:00:01Z",
+					"image_url": "https://images.urbndata.com/is/image/Anthropologie/4123650590131_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+					"description": "Give a nod to mod with the Colette. Cropped with flare, our rave-reviewed silhouette charms with a form-fitting high rise and a breezy wide leg.",
+					"price": 10.00
+      }
+},{
+      "model": "bangazonissuesserverapi.category",
+      "pk": 3,
+      "fields": {
+					"seller_id": 1,
+					"category_id": 3,
+					"title": "The Tilda Maxi Slip Skirt",
+					"created_on": "1970-01-01T00:00:01Z",
+					"image_url": "https://images.urbndata.com/is/image/Anthropologie/4120652010039_014_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+					"description": "If you haven't met the Tilda slip skirt, then bon jour! A French-inspired bias-cut design makes it drape and move just so – equally chic for a night out or a day about town.",
+					"price": 25.00
+      }
+},{
+			"model": "bangazonissuesserverapi.category",
+			"pk": 4,
+			"fields": {
+					"seller_id": 1,
+					"category_id": 4,
+					"title": "Mac Duggal Ruffled Cross-Back Smock-Waist Floral Embroidered Gown",
+					"created_on": "1970-01-01T00:00:01Z",
+					"image_url": "https://images.urbndata.com/is/image/Anthropologie/85891687_040_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+					"description": "Whimsical ruffles and embroidered florals accent the V-neckline and criss-cross back of the Mac Duggal Cross-Back Smock-Waist Gown. Complete with ruffled trim and a smocked waist, this airy, maxi-length A-line silhouette is bursting with charm.",
+					"price": 100.00
+			}
+}
+]

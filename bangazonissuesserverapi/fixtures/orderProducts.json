@@ -1,0 +1,22 @@
+[
+  {
+      "model": "bangazonissuesserverapi.category",
+      "pk": 1,
+      "fields": {
+					"product_id": 4,
+          "order_id": 1,
+					"quantity": 1,
+					"quantity_total": 100.00
+        }
+  },
+  {
+      "model": "bangazonissuesserverapi.category",
+      "pk": 2,
+      "fields": {
+				"product_id": 3,
+				"order_id": 2,
+				"quantity": 1,
+				"quantity_total": 25.00
+      }
+}
+]

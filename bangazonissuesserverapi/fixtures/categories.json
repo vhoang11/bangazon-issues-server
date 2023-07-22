@@ -1,0 +1,28 @@
+[
+  {
+      "model": "bangazonissuesserverapi.category",
+      "pk": 1,
+      "fields": {
+          "label": "Shirts"
+        }
+  },
+  {
+      "model": "bangazonissuesserverapi.category",
+      "pk": 2,
+      "fields": {
+          "label": "Pants"
+      }
+},{
+      "model": "bangazonissuesserverapi.category",
+      "pk": 3,
+      "fields": {
+          "label": "Skirts"
+      }
+},{
+			"model": "bangazonissuesserverapi.category",
+			"pk": 4,
+			"fields": {
+					"label": "Dresses"
+			}
+}
+]

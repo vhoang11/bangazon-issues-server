@@ -18,10 +18,14 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 
-from bangazonissuesserverapi.views import register_user, check_user, UserView
+from bangazonissuesserverapi.views import register_user, check_user, UserView, CategoryView, OrderView, OrderProductView, ProductView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', UserView, 'user')
+router.register(r'categories', CategoryView, 'category')
+router.register(r'orders', OrderView, 'order')
+router.register(r'orderproducts', OrderProductView, 'order_product')
+router.register(r'products', ProductView, 'product')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
